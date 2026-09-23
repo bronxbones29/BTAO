@@ -1,86 +1,40 @@
 <!doctype html>
-<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#05090e"><title>BTAO</title>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#05090e"><title>BTAO</title>
 <style>
-:root{--bg:#05090e;--card:#0b141e;--line:#1c3142;--text:#f4f8fb;--muted:#8297aa;--cyan:#59d9ff;--green:#62f4b1;--amber:#ffd36a}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 70% -10%,#0b3854 0,transparent 31%),var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.11;background-image:linear-gradient(#59d9ff18 1px,transparent 1px),linear-gradient(90deg,#59d9ff12 1px,transparent 1px);background-size:32px 32px;mask-image:linear-gradient(#000,transparent 75%)}
-main{max-width:560px;margin:auto;padding:calc(env(safe-area-inset-top) + 20px) 18px 44px}.hero{position:relative;overflow:hidden;padding:5px 1px 14px}.orb{position:absolute;width:190px;height:190px;right:-95px;top:-105px;border-radius:50%;background:radial-gradient(circle at 38% 38%,#74e4ff70,#0b7cad25 40%,transparent 70%)}
-.tghost{position:absolute;right:18px;top:10px;font-size:100px;font-weight:900;color:#59d9ff0e;transform:rotate(-8deg)}.top{display:flex;align-items:center;justify-content:space-between}.brand{font-size:30px;font-weight:950;letter-spacing:5px}.tau{color:var(--cyan)}.sub{font-size:10px;letter-spacing:2.5px;color:#9ab0c2;font-weight:850;margin-top:4px}.pill{font-size:10px;padding:7px 9px;border:1px solid var(--line);border-radius:999px;color:var(--muted)}.pill.ok{color:var(--green);border-color:#20523d}
-.card{background:linear-gradient(180deg,#0d1823,#09121a);border:1px solid var(--line);border-radius:22px;padding:18px;margin-top:14px;box-shadow:0 20px 65px #0009}.eyebrow{font-size:11px;letter-spacing:2px;color:var(--muted);font-weight:800}.big{font-size:42px;font-weight:900;margin:6px 0}.muted{color:var(--muted);font-size:13px;line-height:1.5}.row{display:flex;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid #152838}.row:last-child{border-bottom:0}.rank{width:28px;color:var(--muted);font-weight:900}.grow{flex:1;min-width:0}.name{font-weight:900;font-size:18px}.meta{font-size:11px;color:var(--muted);margin-top:4px}.score{font-size:19px;font-weight:950}.green{color:var(--green)}
-input{width:100%;padding:15px;border-radius:14px;border:1px solid var(--line);background:#060c12;color:white;font-size:16px;margin:12px 0}button{border:0;border-radius:14px;padding:14px 15px;font-weight:850;font-size:14px;background:var(--text);color:#061019}.actions{display:flex;gap:9px}.actions button{flex:1}.secondary{background:#111f2b;color:white;border:1px solid var(--line)}
-.status{font-size:12px;color:var(--muted);margin-top:10px}.rotation{font-size:20px;font-weight:900;margin-top:8px}.hold{color:var(--green)}.warn{color:var(--amber)}.err{padding:11px 12px;border:1px solid #614b25;border-radius:12px;background:#2a210d66;color:var(--amber);font-size:12px;line-height:1.45;margin-top:10px}.tiny{text-align:center;font-size:10px;color:#587086;margin-top:20px;letter-spacing:.7px}.position{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid #152838}.position:last-child{border:0}.pulse{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 13px var(--green);margin-right:6px}
+:root{--bg:#05090e;--card:#0b151f;--line:#1d3446;--text:#f4f8fb;--muted:#8298ab;--cyan:#55d9ff;--green:#60f3b0;--amber:#ffd36a}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 75% -5%,#0b3955 0,transparent 30%),var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.1;background-image:linear-gradient(#55d9ff18 1px,transparent 1px),linear-gradient(90deg,#55d9ff12 1px,transparent 1px);background-size:32px 32px;mask-image:linear-gradient(#000,transparent 72%)}
+main{max-width:560px;margin:auto;padding:calc(env(safe-area-inset-top) + 20px) 18px 44px}.hero{position:relative;padding:5px 1px 16px;overflow:hidden}.orb{position:absolute;width:180px;height:180px;right:-80px;top:-105px;border-radius:50%;background:radial-gradient(circle,#65ddff55,transparent 67%)}.ghost{position:absolute;right:20px;top:5px;font-size:105px;font-weight:950;color:#55d9ff0d;transform:rotate(-8deg)}
+.top{display:flex;justify-content:space-between;align-items:center}.brand{font-size:31px;font-weight:950;letter-spacing:5px}.tau{color:var(--cyan)}.sub{font-size:10px;letter-spacing:2.3px;color:#9aafc1;font-weight:850;margin-top:4px}.pill{font-size:10px;padding:7px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted)}.ok{color:var(--green)}
+.card{background:linear-gradient(180deg,#0d1823,#09121a);border:1px solid var(--line);border-radius:23px;padding:19px;margin-top:14px;box-shadow:0 20px 65px #0008}.eye{font-size:11px;letter-spacing:2px;color:var(--muted);font-weight:850}.big{font-size:42px;font-weight:950;margin:7px 0}.muted{color:var(--muted);font-size:13px;line-height:1.5}.row{display:flex;gap:12px;align-items:center;padding:14px 0;border-bottom:1px solid #162938}.row:last-child{border:0}.rank{width:29px;color:var(--muted);font-weight:900}.grow{flex:1}.name{font-size:18px;font-weight:900}.meta{font-size:11px;color:var(--muted);margin-top:4px}.score{font-size:20px;font-weight:950}.green{color:var(--green)}
+input{width:100%;padding:15px;border-radius:14px;border:1px solid var(--line);background:#060c12;color:#fff;font-size:16px;margin:12px 0}button{width:100%;border:0;border-radius:14px;padding:14px;font-weight:850;font-size:14px;background:#f4f8fb;color:#061019}.status{font-size:12px;color:var(--muted);margin-top:10px}.err{margin-top:10px;padding:11px;border:1px solid #654d25;border-radius:12px;color:var(--amber);background:#2b210d66;font-size:12px;line-height:1.45}.rotation{font-size:20px;font-weight:900;margin-top:8px}.tiny{text-align:center;font-size:10px;color:#587086;margin-top:20px;letter-spacing:.7px}.pulse{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 12px var(--green);margin-right:6px}
 </style></head><body><main>
-<div class="hero"><div class="orb"></div><div class="tghost">τ</div><div class="top"><div><div class="brand"><span class="tau">τ</span>BTAO</div><div class="sub">BRONXBONES ALPHA CHASER</div></div><div id="net" class="pill">LOADING</div></div></div>
-
-<div class="card"><div class="eyebrow">YOUR TAO</div><div id="total" class="big">— τ</div><div id="breakdown" class="muted">Connect a public coldkey to load balance and subnet positions.</div>
-<input id="addr" autocomplete="off" autocapitalize="off" placeholder="Public Bittensor coldkey address">
-<div class="actions"><button id="connect">Connect wallet</button><button id="refresh" class="secondary">Refresh</button></div><div id="status" class="status">Loading verified subnet data…</div></div>
-
-<div class="card"><div class="eyebrow">LIVE TOP 5 · VERIFIED SUBNETS</div><div id="top5"><div class="muted" style="padding-top:12px">Loading…</div></div>
-<div class="muted" style="margin-top:10px">Score: 60% emission ÷ TAO market-cap efficiency + 40% liquidity confirmation. This live browser build does not pretend historical/social factors are available.</div></div>
-
-<div class="card"><div class="eyebrow">ROTATION</div><div id="rotation" class="rotation">Connect wallet to compare positions</div><div id="rotNote" class="muted" style="margin-top:7px">Read-only. BTAO never asks for a seed phrase or private key.</div></div>
-
-<div id="portfolioCard" class="card" style="display:none"><div class="eyebrow">SUBNET POSITIONS · TAO VALUE</div><div id="positions"></div></div>
-<div class="tiny">METAGRAPHED PUBLIC CHAIN DATA · READ ONLY · NO API KEY</div>
-</main><script>
-const API='https://api.metagraph.sh/api/v1', KEY='btao_wallet', $=s=>document.querySelector(s);
-let econ=[], names={}, top=[];
-const num=(...v)=>{for(const x of v){const n=Number(x);if(Number.isFinite(n))return n}return 0};
-async function get(url){const r=await fetch(url,{cache:'no-store',headers:{accept:'application/json'}});if(!r.ok){let t='';try{t=await r.text()}catch{}throw Error(`${r.status} ${t.slice(0,80)}`)}return r.json()}
-function rows(j){const d=j?.data??j;if(Array.isArray(d))return d;for(const k of ['economics','subnets','items','results','rows'])if(Array.isArray(d?.[k]))return d[k];return[]}
-async function loadNames(){
- const j=await get(`${API}/subnets?limit=1000`);
- const d=j?.data??j;
- const a=Array.isArray(d)?d:(d?.subnets||d?.items||d?.results||[]);
- for(const x of a){
-   const n=num(x.netuid,x.uid,x.id);
-   const nm=x.name||x.subnet_name||x.title||x.display_name;
-   if(n>=0&&nm)names[n]=nm;
+<div class="hero"><div class="orb"></div><div class="ghost">τ</div><div class="top"><div><div class="brand"><span class="tau">τ</span>BTAO</div><div class="sub">BRONXBONES ALPHA CHASER</div></div><div id="live" class="pill">SYNC</div></div></div>
+<div class="card"><div class="eye">BTAO DATA</div><div id="stamp" class="big" style="font-size:24px">Loading…</div><div id="sync" class="muted">Reading same-origin data.json from GitHub Pages.</div></div>
+<div class="card"><div class="eye">LIVE TOP 5 · TAO-FIRST</div><div id="top5"><div class="muted" style="padding-top:12px">Loading ranking…</div></div><div class="muted" style="margin-top:10px">V1 score: 60% emission-to-TAO-market-cap efficiency + 40% liquidity confirmation. No invented historical/social inputs.</div></div>
+<div class="card"><div class="eye">YOUR TAO · OPTIONAL</div><div class="muted">Enter a public coldkey only if you want the next backend update to include wallet data. Never enter a seed phrase or private key.</div><input id="addr" placeholder="Public coldkey (stored only on this iPhone)"><button id="save">Save locally</button><div id="walletNote" class="status"></div></div>
+<div class="card"><div class="eye">ROTATION</div><div class="rotation">Backend online first</div><div class="muted" style="margin-top:7px">Once the public ranking feed is stable, wallet-specific comparison can be added without exposing your address in the repository.</div></div>
+<div class="tiny">GITHUB ACTION → DATA.JSON → GITHUB PAGES · READ ONLY</div>
+<script>
+const $=x=>document.querySelector(x), KEY='btao_wallet';
+function esc(x){return String(x??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+async function load(){
+ try{
+  const r=await fetch('./data.json?v='+Date.now(),{cache:'no-store'});
+  if(!r.ok)throw Error('data.json HTTP '+r.status);
+  const d=await r.json();
+  if(!d.ok)throw Error(d.error||'backend update failed');
+  live.textContent='LIVE';live.classList.add('ok');
+  const dt=new Date(d.generated_at); stamp.textContent=dt.toLocaleString();
+  sync.innerHTML='<span class="pulse"></span>'+esc(d.subnet_count)+' verified subnet economics rows';
+  top5.innerHTML=d.top5.map((x,i)=>`<div class="row"><div class="rank">0${i+1}</div><div class="grow"><div class="name">${esc(x.name)}</div><div class="meta">SN${x.netuid} · emission ${(x.emission_share*100).toFixed(2)}% · ${x.tao_in_pool_tao.toFixed(1)} τ pool</div></div><div class="score ${i<2?'green':''}">${x.score.toFixed(1)}</div></div>`).join('');
+ }catch(e){
+  live.textContent='OFFLINE';stamp.textContent='No backend data';
+  sync.innerHTML='<div class="err">'+esc(e.message)+'. Open the repository Actions tab and run “Update BTAO data”.</div>';
+  top5.innerHTML='<div class="err">No ranking shown. BTAO will not substitute fake subnet data.</div>';
  }
- if(Object.keys(names).length<5)throw Error('Subnet directory did not return names');
 }
-async function loadEconomics(){
- const j=await get(`${API}/economics?sort=emission_share&order=desc&limit=1000`);
- const a=rows(j).map(x=>{const n=num(x.netuid);return{netuid:n,name:x.name||x.subnet_name||names[n]||'',em:num(x.emission_share,x.emission),cap:num(x.alpha_market_cap_tao,x.alpha_fdv_tao),liq:num(x.tao_in_pool_tao,x.tao_in_pool,x.liquidity_tao),price:num(x.alpha_price_tao)}})
- .filter(x=>x.netuid>0&&x.netuid<1000&&x.name&&x.em>0&&x.cap>0);
- if(a.length<5)throw Error('Verified economics feed returned too few named subnets');
- return a;
-}
-function rank(a){
- const ml=Math.max(...a.map(x=>x.liq),1), eff=a.map(x=>x.em/x.cap), me=Math.max(...eff,1e-12);
- a.forEach((x,i)=>{x.eff=eff[i];x.score=Math.round(100*(.6*(x.eff/me)+.4*(x.liq/ml))*10)/10});
- return [...a].sort((a,b)=>b.score-a.score).slice(0,5)
-}
-function drawTop(){
- top5.innerHTML=top.map((x,i)=>`<div class="row"><div class="rank">0${i+1}</div><div class="grow"><div class="name">${x.name}</div><div class="meta">SN${x.netuid} · emission ${(x.em*100).toFixed(2)}% · ${x.liq.toFixed(1)} τ pool</div></div><div class="score ${i<2?'green':''}">${x.score.toFixed(1)}</div></div>`).join('')
-}
-function balanceFields(j){const d=j?.data??j;return {free:num(d.free_tao,d.free_balance_tao,d.free,d.balance_tao,d.balance?.free_tao),reserved:num(d.reserved_tao,d.reserved_balance_tao,d.reserved,d.balance?.reserved_tao)}}
-function positionRows(j){const d=j?.data??j;return Array.isArray(d?.positions)?d.positions:(Array.isArray(d)?d:[])}
-async function loadWallet(a){
- const [bj,pj]=await Promise.all([get(`${API}/accounts/${encodeURIComponent(a)}/balance`),get(`${API}/accounts/${encodeURIComponent(a)}/positions`)]);
- const b=balanceFields(bj), ps=positionRows(pj);
- const byNet=new Map(econ.map(x=>[x.netuid,x]));
- const agg=new Map();
- for(const p of ps){const n=num(p.netuid);let tao=num(p.stake_tao,p.value_tao,p.tao_value);if(!tao){const alpha=num(p.stake_alpha,p.alpha);const e=byNet.get(n);if(alpha&&e?.price)tao=alpha*e.price}if(tao>0)agg.set(n,(agg.get(n)||0)+tao)}
- const holdings=[...agg].map(([netuid,tao])=>({netuid,tao,name:byNet.get(netuid)?.name||names[netuid]||`SN${netuid}`})).sort((a,b)=>b.tao-a.tao);
- const staked=holdings.reduce((s,x)=>s+x.tao,0), totalTao=b.free+staked;
- total.textContent=`${totalTao.toFixed(3)} τ`;breakdown.textContent=`${b.free.toFixed(3)} τ free · ${staked.toFixed(3)} τ deployed`;
- portfolioCard.style.display='block';positions.innerHTML=holdings.length?holdings.map(x=>`<div class="position"><div><b>${x.name}</b><div class="meta">SN${x.netuid}</div></div><b>${x.tao.toFixed(3)} τ</b></div>`).join(''):`<div class="muted" style="padding-top:10px">No non-root delegated subnet positions returned for this coldkey.</div>`;
- const held=new Set(holdings.filter(x=>x.tao>.00001).map(x=>x.netuid)), wanted=new Set(top.map(x=>x.netuid));
- const out=[...held].filter(n=>!wanted.has(n)), incoming=top.filter(x=>!held.has(x.netuid));
- if(held.size===5&&!out.length){rotation.innerHTML='<span class="hold">HOLD · your 5 match the current Top 5</span>';rotNote.textContent='No rotation signal.'}
- else if(out.length&&incoming.length){const o=holdings.find(x=>x.netuid===out[0]);rotation.textContent=`ROTATE ${o?.name||'SN'+out[0]} → ${incoming[0].name}`;rotNote.textContent='Model comparison only — you make the trading decision.'}
- else{rotation.textContent=`${held.size} subnet position${held.size===1?'':'s'} detected`;rotNote.textContent='BTAO compares your detected positions with the verified Top 5.'}
-}
-async function refreshAll(){
- refresh.disabled=true;status.textContent='Refreshing verified public chain data…';net.textContent='LOADING';net.className='pill';
- try{await loadNames();econ=await loadEconomics();top=rank(econ);drawTop();net.textContent='LIVE';net.className='pill ok';status.innerHTML=`<span class="pulse"></span>Verified economics · ${new Date().toLocaleTimeString()}`;
- const a=localStorage.getItem(KEY);if(a){addr.value=a;await loadWallet(a)}
- }catch(e){net.textContent='ERROR';net.className='pill';status.innerHTML=`<div class="err">${e.message}. No unverified subnet ranking is shown.</div>`;top5.innerHTML='<div class="err">Data unavailable. BTAO will not substitute heuristic subnet IDs.</div>'}
- finally{refresh.disabled=false}
-}
-connect.onclick=async()=>{const a=addr.value.trim();if(a.length<40)return alert('Enter your public Bittensor coldkey address.');localStorage.setItem(KEY,a);await refreshAll()};
-refresh.onclick=refreshAll;const saved=localStorage.getItem(KEY);if(saved)addr.value=saved;refreshAll();
-</script></body></html>
+addr.value=localStorage.getItem(KEY)||''; walletNote.textContent=addr.value?'Public coldkey saved locally.':'Nothing saved.';
+save.onclick=()=>{const a=addr.value.trim();if(a&&a.length<40)return alert('That does not look like a Bittensor SS58 address.');localStorage.setItem(KEY,a);walletNote.textContent=a?'Public coldkey saved locally.':'Nothing saved.'};
+load();
+</script></main></body></html>
