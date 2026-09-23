@@ -1,0 +1,11 @@
+<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1,viewport-fit=cover'><meta name='theme-color' content='#06080d'><title>BTAO</title><link rel='manifest' href='manifest.json'><link rel='stylesheet' href='style.css'></head><body>
+<div class='glow'></div><main>
+<header><div><div class='brand'><span class='tau'>τ</span>BTAO</div><div class='tag'>CHASE ALPHA · GROW TAO</div></div><button id='refresh' class='icon'>↻</button></header>
+<section id='connect' class='hero card'><div class='eyebrow'>READ-ONLY WALLET</div><h1>Connect your<br><span>TAO address.</span></h1><p>Public coldkey only. BTAO never asks for your seed phrase or private key.</p><form id='walletForm'><input id='address' autocomplete='off' placeholder='5D… Bittensor coldkey'><button>Connect</button></form><div id='providerNote' class='note'>Provider: waiting for public data connection</div></section>
+<section id='dash' hidden>
+<div class='balance card'><div><div class='eyebrow'>TOTAL TAO-EQUIVALENT</div><div class='big' id='total'>— τ</div><div class='sub' id='walletShort'></div></div><div class='live'><i></i><span id='liveText'>DATA OFFLINE</span></div></div>
+<div class='sectionTitle'><span>LIVE TOP 5</span><small>60% emission edge · 40% confirmation</small></div><div id='top5' class='top5'></div>
+<div id='rotation' class='rotation card'><div class='eyebrow'>ROTATION ENGINE</div><strong>Waiting for verified live data</strong><p>BTAO will only show HOLD / ROTATE after the ranking feed is verified.</p></div>
+<div class='sectionTitle'><span>YOUR POSITIONS</span><small>TAO denominated</small></div><div id='positions' class='positions card'><div class='empty'>Connect a live provider to load subnet positions.</div></div>
+</section>
+<footer>BTAO · READ ONLY · TAO IS THE NUMERAIRE</footer></main><script src='app.js'></script></body></html>
